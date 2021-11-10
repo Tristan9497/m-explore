@@ -252,8 +252,8 @@ std::array<unsigned char, 256> init_translation_table()
     else if (i >= 50)
       cost_translation_table[i] = 254;
     else cost_translation_table[i] = 255;
-    
-    cost_translation_table[static_cast<unsigned char>(0xff)] = 255;
+
+  cost_translation_table[static_cast<unsigned char>(0xff)] = 255;
     
   return cost_translation_table;
 }
